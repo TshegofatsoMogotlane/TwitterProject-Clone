@@ -1,0 +1,69 @@
+.laptop-default {
+    display: block;
+}
+.mobile-logo-profile{
+    display:none;
+}
+
+@media (max-width: 480px) {
+    .body{
+        font-size: small;
+    }
+    .left-sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100vw;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .posting-container{
+        display: none;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .mobile-df {
+        margin-left: 25%;
+    }
+
+    .mobile-logo-profile{
+        display: flex;
+        display: block;
+    }
+    .mobile-account{
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 70%;
+    }
+    .mobile-df{
+        width: 10%;
+        margin-top: 2%;
+        margin-left: 35%;
+    }
+    .follow-info, .for-you, .following {
+        font-size: 14px;
+        position: relative;
+    }
+    .posts-count{
+        font-size: small;
+    }
+
+    .options {
+        display: none;
+    }
+    .mobile-bottom-icons{
+        position: sticky;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: block;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        color: white;
+    }
+}

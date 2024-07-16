@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="mainbody">
+        <div class="left-sidebar">
+            <div class="logo">
+                <img class="df" src="assets/logo.png" alt="Twitter logo">
+            </div>
+            <div class="left-sidebar-icons">
+                <span class="category">
+                    <i class="material-icons">home</i>
+                    Home
+                </span>
+                <span class="category">
+                    <i class="material-icons">search</i>
+                    Explore
+                </span>
+                <span class="category">
+                    <i class="material-icons">notifications</i>
+                    Notifications
+                </span>
+                <span class="category">
+                    <i class="material-icons">mail</i>
+                    Messages
+                </span>
+                <span class="category">
+                    <i class="material-icons">open_in_new</i>
+                    Grok
+                </span>
+                <span class="category">
+                    <i class="material-icons">group</i>
+                    communities
+                </span>
+                <span class="category">
+                    <i class="material-icons">person</i>
+                    Profile
+                </span><span class="category">
+                    <i class="material-icons">pending</i>
+                    More
+                </span>
+            </div>
+            <button class="post-button">Post</button>
+            <div class="my-account">
+                <div class="account-info">
+                    <div class="account-circle">
+                        <i class="material-icons">account_circle</i>
+                    </div>
+                    <div class="account-details">
+                        <div class="name">Tshego</div>
+                        <div class="username">@tmogotlane</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="mobile-logo-profile">
+                <img class="mobile-account"src="https://lh3.googleusercontent.com/ogw/AF2bZyi6705Zncq0reGR9AH0nMczN992Tf0ngPRkZAbGdHNsnwv2=s32-c-mo" alt="Profile Image">
+                <img class="mobile-df" src="assets/logo.png" alt="Twitter logo">
+            </div>
+            <div class="follow-info">
+                <div class="for-you active" onclick="toggleTab('for-you')">
+                    <span>For you</span>
+                </div>
+                <div class="following" onclick="toggleTab('following')">
+                    <span>Following</span>
+                </div>
+            </div>
+            <div class="posting-container">
+                <div class="account-section">
+                    <div class="profile-info">
+                        <img src="https://lh3.googleusercontent.com/ogw/AF2bZyi6705Zncq0reGR9AH0nMczN992Tf0ngPRkZAbGdHNsnwv2=s32-c-mo" alt="Profile Image">
+                    </div>
+                    <div class="whats-happening">
+                        <textarea class="post-input" placeholder="What's happening?"></textarea>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="media-option">
+                        <i class="material-icons">image</i>
+                    </div>
+                    <div class="gif-option">
+                        <i class="material-icons">gif_box</i>
+                    </div>
+                    <div class="poll-option">
+                        <i class="material-icons">ballot</i>
+                    </div>
+                    <div class="emoji-option">
+                        <i class="material-icons">mood</i>
+                    </div>
+                    <div class="schedule-option">
+                        <i class="material-icons">pending_actions</i>
+                    </div>
+                    <div class="schedule-option">
+                        <i class="material-icons">location_on</i>
+                    </div>
+                    <button class="post-buttonn">Post</button>
+                </div> 
+                
+            </div>
+            <div class="posts-count">Show 5 posts</div>
+            <div class="posts-container">
+                <div class="post">
+                    <div class="profile-infoo">
+                        <img src="assets/akhil.jpg" alt="Profile Image">
+                        <div class="user-infoo">
+                            <div class="usernamee">akhil boddu</div>
+                            <div class="handlee">@akhilboddu.oi</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <span>
+                            <p>Hello Guys, the movies is out!!!</p>
+                            <img src="assets/badboys.jpg" alt="picture">
+                        </span>
+                    </div>
+                    <div class="post-actions">
+                        <span class="a">
+                            <i class="material-icons">quickreply</i>
+                        </span>
+                        <span class="b">
+                            <i class="material-icons">repeat</i>
+                        </span>
+                        <span class="c">
+                            <i class="material-icons">favorite</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">equalizer</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">bookmark</i>
+                            <i class="material-icons">upload</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="profile-infoo">
+                        <img src="assets/putin.jpg" alt="Putin">
+                        <div class="user-infoo">
+                            <div class="usernamee">Putin</div>
+                            <div class="handlee">@Putin.ac.za</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>I am forced to announce today that Russia is suspending its participation in the strategic offensive arms treaty</p>
+                    </div>
+                    <div class="post-actions">
+                        <span class="a">
+                            <i class="material-icons">quickreply</i>
+                        </span>
+                        <span class="b">
+                            <i class="material-icons">repeat</i>
+                        </span>
+                        <span class="c">
+                            <i class="material-icons">favorite</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">equalizer</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">bookmark</i>
+                            <i class="material-icons">upload</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="profile-infoo">
+                        <img src="assets/biden.jpg" alt="Biden's Profile Image">
+                        <div class="user-infoo">
+                            <div class="usernamee">Joe Biden</div>
+                            <div class="handlee">@joebiden</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>They shot him, I knew they will fire shots at him because he is a maniac</p>
+                        <img src="assets/trump.jpg" alt="Trump's picture">
+                    </div>
+                    <div class="post-actions">
+                        <span class="a">
+                            <i class="material-icons">quickreply</i>
+                        </span>
+                        <span class="b">
+                            <i class="material-icons">repeat</i>
+                        </span>
+                        <span class="c">
+                            <i class="material-icons">favorite</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">equalizer</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">bookmark</i>
+                            <i class="material-icons">upload</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="profile-infoo">
+                        <img src="assets/trevour.jpg" alt="Trevour Noah's picture">
+                        <div class="user-infoo">
+                            <div class="usernamee">Joe Biden</div>
+                            <div class="handlee">@joebiden</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>I think everyone is going crazy guys. The secrete service agent just lost his job after saving Donald trump's life. It is said that he failed to follow the direct command from his commanding officer whom as a result lost his life too</p>
+                        <img src="assets/secreteagent.jpg" alt="secreteagent picture">
+                    </div>
+                    <div class="post-actions">
+                        <span class="a">
+                            <i class="material-icons">quickreply</i>
+                        </span>
+                        <span class="b">
+                            <i class="material-icons">repeat</i>
+                        </span>
+                        <span class="c">
+                            <i class="material-icons">favorite</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">equalizer</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">bookmark</i>
+                            <i class="material-icons">upload</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="profile-infoo">
+                        <img src="assets/ramaphosa.jpg" alt="Ramaphosa">
+                        <div class="user-infoo">
+                            <div class="usernamee">Cyril Ramaphosa</div>
+                            <div class="handlee">@Ramaphosa</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Here we go again, Msholozi went to Russia</p>
+                        <img src="assets/zuma.jpg" alt="Msholozi">
+                    </div>
+                    <div class="post-actions">
+                        <span class="a">
+                            <i class="material-icons">quickreply</i>
+                        </span>
+                        <span class="b">
+                            <i class="material-icons">repeat</i>
+                        </span>
+                        <span class="c">
+                            <i class="material-icons">favorite</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">equalizer</i>
+                        </span>
+                        <span class="a">
+                            <i class="material-icons">bookmark</i>
+                            <i class="material-icons">upload</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-bottom-icons">
+                <span class="category">
+                    <i class="material-icons">home</i>
+                </span>
+                <span class="category">
+                    <i class="material-icons">search</i>
+                </span>
+                <span class="category">
+                    <i class="material-icons">open_in_new</i>
+                </span>
+                <span class="category">
+                    <i class="material-icons">notifications</i>
+                </span>
+                <span class="category">
+                    <i class="material-icons">mail</i>
+                </span>
+                <span class="category">
+                    <i class="material-icons">group</i>
+                </span>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+            <div class="subscription">
+                <h3>Subscribe to Premium</h3>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="trends">
+                <h2>Trend for you</h2>
+                <ul class="trends-list">
+                    <li class="trend-item">
+                        <span class="trend-category">Trending in Technology</span>
+                        <span class="trend-name">#AI</span>
+                        <span class="trend-tweets">125K posts</span>
+                    </li>
+                    <li class="trend-item">
+                        <span class="trend-category">Trending in Sports</span>
+                        <span class="trend-name">#Olympics2024</span>
+                        <span class="trend-tweets">89K posts</span>
+                    </li>
+                    <li class="trend-item">
+                        <span class="trend-category">Trending in Entertainment</span>
+                        <span class="trend-name">#NewMovieRelease</span>
+                        <span class="trend-tweets">52K posts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <ul class="follow-list">
+                    <li class="follow-item">
+                        <img src="assets/josie.webp" alt="Josephine" class="follow-profile-pic">
+                        <div class="follow-info">
+                            <span class="follow-name">Josephine Langford</span>
+                            <span class="follow-username">@josee</span>
+                        </div>
+                        <button class="follow-button">Follow</button>
+                    </li>
+                    <li class="follow-item">
+                        <img src="assets/will.jpg" alt="Will Smith's photo" class="follow-profile-pic">
+                        <div class="follow-info">
+                            <span class="follow-name">Will Smith</span>
+                            <span class="follow-username">@Will</span>
+                        </div>
+                        <button class="follow-button">Follow</button>
+                    </li>
+                    <li class="follow-item">
+                        <img src="assets/tyla.jpg" alt="Profile Picture" class="follow-profile-pic">
+                        <div class="follow-info">
+                            <span class="follow-name">Tyla</span>
+                            <span class="follow-username">@tyla</span>
+                        </div>
+                        <button class="follow-button">Follow</button>
+                    </li>
+                    <li class="follow-item">
+                        <img src="assets/ketherine.jpg" alt="Ketherine Profile" class="follow-profile-pic">
+                        <div class="follow-info">
+                            <span class="follow-name">ketherine langford</span>
+                            <span class="follow-username">@ketherine</span>
+                        </div>
+                        <button class="follow-button">Follow</button>
+                    </li>
+                </ul>
+                <button class="tf">Show more</button>
+            </div>
+            <div class="right-sidebar-footer">
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Ads info</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>
+                <p>© 2024 X Corp.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="mobile-only">Mobile Content</div>
+</body>
+</html>
